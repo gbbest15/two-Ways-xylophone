@@ -19,7 +19,7 @@ class ViewController: UIViewController {
 
 
     @IBAction func keyCPress(_ sender: UIButton) {
-        
+        view.backgroundColor = sender.backgroundColor?.withAlphaComponent(0.5);
         playSound(soundName: sender.currentTitle ?? "A");
         
     }
